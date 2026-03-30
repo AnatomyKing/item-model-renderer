@@ -40,7 +40,7 @@ export const ItemModelRender = () => {
                     >
                         <Canvas
                             ref={canvasRef}
-                            gl={{ preserveDrawingBuffer: true, alpha: true, antialias: true }}
+                            gl={{ preserveDrawingBuffer: true, alpha: true, antialias: false }}
                             onCreated={({ gl }) => {
                                 gl.outputColorSpace = SRGBColorSpace;
                                 gl.toneMapping = NoToneMapping;
